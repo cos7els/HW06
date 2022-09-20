@@ -24,7 +24,7 @@ public class ATM {
 
     public boolean cashFromATM(int sum) {
         boolean result = false;
-        if (this.sum >= sum && sum > 0 && ((sum % 20 == 0) || (sum > 50 && sum % 10 == 0))) {
+        if (this.sum >= sum && sum > 0 && ((sum % 20 == 0) || (sum >= 50 && sum % 10 == 0))) {
             int a100 = 0;
             if (sum >= 100 && this.amount100 > 0) {
                 a100 = sum % 100 == 0 || sum % 100 % 20 == 0 || sum % 100 % 50 == 0 || sum % 100 % 50 % 20 == 0 ?

@@ -21,19 +21,19 @@ public class Main {
 
         ATM atm = new ATM(1, 4, 10);
         System.out.println(atm.toString());
-        atm.cashFromATM(260);
+        atm.cashFromATM(120);
         System.out.println(atm.toString());
         atm.toATM(10, 20, 30);
         System.out.println(atm.toString());
         System.out.println();
 
-        Matrix m1 = new Matrix(4, 2);
+        /*Matrix m1 = new Matrix(4, 2);
         m1.init();
         Matrix m2 = new Matrix(2, 4);
         m2.init();
         m1.printMatrix();
         m2.printMatrix();
         Matrix m3 = m1.multiple(m2);
-        m3.printMatrix();
+        m3.printMatrix();*/
     }
 }
