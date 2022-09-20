@@ -49,7 +49,7 @@ public class ATM {
                 sum -= a20 * 20;
             }
             if (this.amount100 < a100 || this.amount50 < a50 || this.amount20 < a20) {
-                System.out.println("The ATMn don't have enough banknotes.");
+                System.out.println("The ATM don't have enough banknotes.");
                 return false;
             }
             this.amount100 -= a100;

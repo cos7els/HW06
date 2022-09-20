@@ -19,9 +19,9 @@ public class Main {
         System.out.println(comp2.toString());
         System.out.println();
 
-        ATM atm = new ATM(1, 4, 10);
+        ATM atm = new ATM(10, 4, 10);
         System.out.println(atm.toString());
-        atm.cashFromATM(120);
+        atm.cashFromATM(1100);
         System.out.println(atm.toString());
         atm.toATM(10, 20, 30);
         System.out.println(atm.toString());
