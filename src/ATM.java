@@ -26,7 +26,7 @@ public class ATM {
         boolean result = false;
         if (this.sum >= sum && sum > 0 && ((sum % 20 == 0) || (sum >= 50 && sum % 10 == 0))) {
             int a100 = 0;
-            if (sum >= 100 && this.amount100 > 0) {
+            if (sum >= 100) {
                 a100 = sum % 100 == 0 || sum % 100 % 20 == 0 || sum % 100 % 50 == 0 || sum % 100 % 50 % 20 == 0 ?
                         sum / 100 : sum / 100 - 1;
                 if (this.amount100 < a100) {
@@ -35,7 +35,7 @@ public class ATM {
                 sum -= a100 * 100;
             }
             int a50 = 0;
-            if (sum >= 50 && this.amount50 > 0) {
+            if (sum >= 50) {
                 a50 = sum % 50 == 0 ? sum / 50 : (sum % 50 % 20 == 0 ? sum / 50 : sum / 50 - 1);
                 if (this.amount50 < a50) {
                     a50 = sum % (this.amount50 * 50) == 0 ? this.amount50 : (sum % (this.amount50 * 50) % 20 == 0 ?
@@ -44,7 +44,7 @@ public class ATM {
                 sum -= a50 * 50;
             }
             int a20 = 0;
-            if (sum >= 20 && this.amount20 > 0) {
+            if (sum >= 20) {
                 a20 = sum / 20;
                 sum -= a20 * 20;
             }
